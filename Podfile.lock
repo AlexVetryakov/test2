@@ -1,0 +1,45 @@
+PODS:
+  - KeychainAccess (3.2.1)
+  - Kingfisher (7.9.0)
+  - ProgressHUD (13.7.2)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SnapKit (5.6.0)
+  - Swinject (2.6.2)
+  - SwinjectAutoregistration (2.6.1):
+    - Swinject (~> 2.6)
+
+DEPENDENCIES:
+  - KeychainAccess (~> 3.2.1)
+  - Kingfisher
+  - ProgressHUD (~> 13.6)
+  - R.swift (~> 6.1.0)
+  - SnapKit (~> 5.6.0)
+  - Swinject (~> 2.6.2)
+  - SwinjectAutoregistration (~> 2.6.1)
+
+SPEC REPOS:
+  trunk:
+    - KeychainAccess
+    - Kingfisher
+    - ProgressHUD
+    - R.swift
+    - R.swift.Library
+    - SnapKit
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  KeychainAccess: d5470352939ced6d6f7fb51cb2e67aae51fc294f
+  Kingfisher: 59f908b6d2f403b0a3e539debb0eec05cb27002c
+  ProgressHUD: 093d24ca970f191744017bee2649e37d0cd1c5b9
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+  SwinjectAutoregistration: d0de7e48db3601b8b130f2f84e5a8399e0224135
+
+PODFILE CHECKSUM: bf31fb8095241dad5bd44e15df3d8ed04fbc3f98
+
+COCOAPODS: 1.12.1

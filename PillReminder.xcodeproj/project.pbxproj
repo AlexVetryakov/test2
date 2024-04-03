@@ -1,0 +1,1213 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ED9DD4CBB7190251F8CDF5B /* Pods_PillReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03BD2141E85289CB7705249 /* Pods_PillReminder.framework */; };
+		896FE0F12B16443E00292E17 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 896FE0F02B16443E00292E17 /* Localizable.strings */; };
+		896FE0F82B16450000292E17 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 896FE0F62B16450000292E17 /* OpenSans-SemiBold.ttf */; };
+		896FE0F92B16450000292E17 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 896FE0F72B16450000292E17 /* OpenSans-Regular.ttf */; };
+		896FE0FC2B16462C00292E17 /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE0FB2B16462C00292E17 /* ApplicationFlow.swift */; };
+		896FE0FE2B1646B400292E17 /* ApplicationFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE0FD2B1646B400292E17 /* ApplicationFlowAssembly.swift */; };
+		896FE1022B16472800292E17 /* NavigationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1012B16472800292E17 /* NavigationNode.swift */; };
+		896FE1052B16479400292E17 /* RemindersFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1042B16479400292E17 /* RemindersFlow.swift */; };
+		896FE1072B1647F900292E17 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1062B1647F900292E17 /* Flow.swift */; };
+		896FE10A2B16483F00292E17 /* RemindersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1092B16483F00292E17 /* RemindersListModel.swift */; };
+		896FE10C2B16484C00292E17 /* RemindersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE10B2B16484C00292E17 /* RemindersListViewModel.swift */; };
+		896FE10E2B16486000292E17 /* RemindersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE10D2B16486000292E17 /* RemindersListViewController.swift */; };
+		896FE1112B1648A600292E17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1102B1648A600292E17 /* BaseViewController.swift */; };
+		896FE1142B16491200292E17 /* HasCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1132B16491200292E17 /* HasCustomView.swift */; };
+		896FE1182B16499900292E17 /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1172B16499900292E17 /* RemindersListView.swift */; };
+		896FE11D2B164BF800292E17 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE11C2B164BF800292E17 /* NavigationController.swift */; };
+		896FE1232B164EBB00292E17 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1222B164EBB00292E17 /* R.generated.swift */; };
+		896FE1252B17855F00292E17 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896FE1242B17855F00292E17 /* Colors.xcassets */; };
+		896FE12F2B1A6D1500292E17 /* RemindersListPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE12E2B1A6D1500292E17 /* RemindersListPlaceholderView.swift */; };
+		896FE1382B1A6DB900292E17 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1372B1A6DB900292E17 /* BaseView.swift */; };
+		896FE13A2B1A6DC500292E17 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1392B1A6DC500292E17 /* NavigationView.swift */; };
+		896FE13C2B1A6DFC00292E17 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE13B2B1A6DFC00292E17 /* PrimaryButton.swift */; };
+		896FE13F2B1A6FBE00292E17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE13E2B1A6FBE00292E17 /* Constants.swift */; };
+		896FE1422B1A73E400292E17 /* CancellablesApplicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1412B1A73E400292E17 /* CancellablesApplicable.swift */; };
+		896FE1462B1A74D200292E17 /* RemindPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1452B1A74D200292E17 /* RemindPresentable.swift */; };
+		896FE1492B1A766400292E17 /* UIButton+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1482B1A766400292E17 /* UIButton+Action.swift */; };
+		896FE14B2B1A76B700292E17 /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE14A2B1A76B700292E17 /* UIControl+Combine.swift */; };
+		896FE14E2B1A77B000292E17 /* RemindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE14D2B1A77B000292E17 /* RemindTableViewCell.swift */; };
+		896FE1512B1A781500292E17 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1502B1A781500292E17 /* Reusable.swift */; };
+		896FE1532B1A784500292E17 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1522B1A784500292E17 /* UITableView+Reusable.swift */; };
+		896FE1562B1BA64C00292E17 /* RemindersListSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1552B1BA64C00292E17 /* RemindersListSectionHeaderView.swift */; };
+		896FE1582B1BAC8300292E17 /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1572B1BAC8300292E17 /* String+Attributed.swift */; };
+		896FE15A2B1BB02C00292E17 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1592B1BB02C00292E17 /* UIView+Corners.swift */; };
+		896FE15C2B1BB29300292E17 /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE15B2B1BB29300292E17 /* Collection+Safe.swift */; };
+		896FE15E2B1BB4CA00292E17 /* Date+Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE15D2B1BB4CA00292E17 /* Date+Calendar.swift */; };
+		896FE1622B1CFE1900292E17 /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1612B1CFE1900292E17 /* CreateReminderViewController.swift */; };
+		896FE1642B1CFE3100292E17 /* CreateReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1632B1CFE3100292E17 /* CreateReminderViewModel.swift */; };
+		896FE1662B1CFE4200292E17 /* CreateReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1652B1CFE4200292E17 /* CreateReminderModel.swift */; };
+		896FE16A2B1CFEB500292E17 /* PillInfoStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1692B1CFEB500292E17 /* PillInfoStepViewController.swift */; };
+		896FE16C2B1CFEC600292E17 /* ReminderInfoStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE16B2B1CFEC600292E17 /* ReminderInfoStepViewController.swift */; };
+		896FE16F2B1CFF4500292E17 /* CreateReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE16E2B1CFF4500292E17 /* CreateReminderView.swift */; };
+		896FE1712B1CFF8700292E17 /* ReminderInfoStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1702B1CFF8700292E17 /* ReminderInfoStepView.swift */; };
+		896FE1732B1CFFAB00292E17 /* PillInfoStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1722B1CFFAB00292E17 /* PillInfoStepView.swift */; };
+		896FE1752B1D088E00292E17 /* ReminderInfoStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1742B1D088E00292E17 /* ReminderInfoStepViewModel.swift */; };
+		896FE1772B1D08C800292E17 /* ReminderInfoStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1762B1D08C800292E17 /* ReminderInfoStepModel.swift */; };
+		896FE1792B1D08EA00292E17 /* PillInfoStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE1782B1D08EA00292E17 /* PillInfoStepViewModel.swift */; };
+		896FE17B2B1D08FA00292E17 /* PillInfoStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FE17A2B1D08FA00292E17 /* PillInfoStepModel.swift */; };
+		899031672B46F0D5008D08F3 /* DaySelectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031662B46F0D5008D08F3 /* DaySelectableView.swift */; };
+		899031692B4702A8008D08F3 /* WeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031682B4702A8008D08F3 /* WeekDaysView.swift */; };
+		8990316B2B4704B4008D08F3 /* WeekDayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990316A2B4704B4008D08F3 /* WeekDayButton.swift */; };
+		8990316F2B4C2652008D08F3 /* ScheduleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990316E2B4C2652008D08F3 /* ScheduleCardView.swift */; };
+		899031712B4C2A01008D08F3 /* ScheduleSelectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031702B4C2A01008D08F3 /* ScheduleSelectableView.swift */; };
+		899031752B4DABAB008D08F3 /* DailyPillsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031742B4DABAB008D08F3 /* DailyPillsCardView.swift */; };
+		899031772B4DB0DA008D08F3 /* DailyTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031762B4DB0DA008D08F3 /* DailyTimeView.swift */; };
+		8990317A2B4DC3CF008D08F3 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031792B4DC3CF008D08F3 /* StringBuilder.swift */; };
+		8990317F2B504501008D08F3 /* PeriodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990317E2B504501008D08F3 /* PeriodCardView.swift */; };
+		899031812B517F76008D08F3 /* SchedulePatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031802B517F76008D08F3 /* SchedulePatternType.swift */; };
+		899031862B56D318008D08F3 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031852B56D318008D08F3 /* TimePickerViewController.swift */; };
+		899031882B56D330008D08F3 /* TimePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031872B56D330008D08F3 /* TimePickerViewModel.swift */; };
+		8990318A2B56D346008D08F3 /* TimePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031892B56D346008D08F3 /* TimePickerModel.swift */; };
+		8990318D2B56D398008D08F3 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990318C2B56D398008D08F3 /* TimePickerView.swift */; };
+		8990318F2B59B095008D08F3 /* DateFormatter+PillReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990318E2B59B095008D08F3 /* DateFormatter+PillReminder.swift */; };
+		899031B62B5A8623008D08F3 /* PillReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 899031B42B5A8623008D08F3 /* PillReminder.xcdatamodeld */; };
+		899031B92B5A8ED5008D08F3 /* DataBaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031B82B5A8ED5008D08F3 /* DataBaseClient.swift */; };
+		899031CD2B5AB98B008D08F3 /* UserEntity+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031CC2B5AB98B008D08F3 /* UserEntity+CoreData.swift */; };
+		899031D02B6020E0008D08F3 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031CF2B6020E0008D08F3 /* ReminderService.swift */; };
+		899031D32B6022FE008D08F3 /* Resolver+Autoresolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031D22B6022FE008D08F3 /* Resolver+Autoresolve.swift */; };
+		899031D52B616003008D08F3 /* RemindEntity+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031D42B616003008D08F3 /* RemindEntity+CoreData.swift */; };
+		899031D72B61603C008D08F3 /* PlannedRemindEntity+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031D62B61603C008D08F3 /* PlannedRemindEntity+CoreData.swift */; };
+		899031D92B61691D008D08F3 /* Remind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031D82B61691D008D08F3 /* Remind.swift */; };
+		899031DB2B618825008D08F3 /* PlannedRemind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031DA2B618825008D08F3 /* PlannedRemind.swift */; };
+		899031DD2B61890A008D08F3 /* PlannedRemindStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031DC2B61890A008D08F3 /* PlannedRemindStatus.swift */; };
+		899031DF2B61944D008D08F3 /* Calendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899031DE2B61944D008D08F3 /* Calendar+Dates.swift */; };
+		89F29AEB2B3C4EAA00F37ABF /* CommonInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AEA2B3C4EAA00F37ABF /* CommonInputField.swift */; };
+		89F29AED2B3C4FA500F37ABF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AEC2B3C4FA500F37ABF /* CustomTextField.swift */; };
+		89F29AF02B3C554E00F37ABF /* PillNameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AEF2B3C554E00F37ABF /* PillNameCardView.swift */; };
+		89F29AF22B3C799800F37ABF /* PillActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AF12B3C799800F37ABF /* PillActionCardView.swift */; };
+		89F29AF42B3DF8D500F37ABF /* PillDoseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AF32B3DF8D500F37ABF /* PillDoseCardView.swift */; };
+		89F29AF62B3DFA5700F37ABF /* CountActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AF52B3DFA5700F37ABF /* CountActionView.swift */; };
+		89F29AFA2B3DFE1A00F37ABF /* ImagePickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AF92B3DFE1A00F37ABF /* ImagePickerService.swift */; };
+		89F29AFC2B3DFE5700F37ABF /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AFB2B3DFE5700F37ABF /* UIApplication+Window.swift */; };
+		89F29AFE2B3DFEA000F37ABF /* UIWindow+Visible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AFD2B3DFEA000F37ABF /* UIWindow+Visible.swift */; };
+		89F29B002B3DFEE500F37ABF /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29AFF2B3DFEE500F37ABF /* UIImage+Orientation.swift */; };
+		89F29B022B3F131100F37ABF /* AlertControllerPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B012B3F131100F37ABF /* AlertControllerPresentable.swift */; };
+		89F29B042B3F1E0400F37ABF /* BasePopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B032B3F1E0400F37ABF /* BasePopupView.swift */; };
+		89F29B072B3F2B4E00F37ABF /* FormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B062B3F2B4E00F37ABF /* FormsViewController.swift */; };
+		89F29B092B3F2B6700F37ABF /* FormsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B082B3F2B6700F37ABF /* FormsViewModel.swift */; };
+		89F29B0B2B3F2B7500F37ABF /* FormsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B0A2B3F2B7500F37ABF /* FormsModel.swift */; };
+		89F29B0E2B3F2C0800F37ABF /* FormsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B0D2B3F2C0800F37ABF /* FormsView.swift */; };
+		89F29B102B3F2E9300F37ABF /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B0F2B3F2E9300F37ABF /* FormTableViewCell.swift */; };
+		89F29B142B444C5100F37ABF /* DrugFormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B132B444C5100F37ABF /* DrugFormType.swift */; };
+		89F29B162B44669B00F37ABF /* StepsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F29B152B44669B00F37ABF /* StepsProgressView.swift */; };
+		89FA5E332AF40C0900EA48CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA5E322AF40C0900EA48CA /* AppDelegate.swift */; };
+		89FA5E3C2AF40C0A00EA48CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FA5E3B2AF40C0A00EA48CA /* Assets.xcassets */; };
+		89FA5E3F2AF40C0A00EA48CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FA5E3D2AF40C0A00EA48CA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		346E720C155C5499AB49E414 /* Pods-PillReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillReminder.debug.xcconfig"; path = "Target Support Files/Pods-PillReminder/Pods-PillReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		3EE5DEDCF4231B2BB150D730 /* Pods-PillReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillReminder.release.xcconfig"; path = "Target Support Files/Pods-PillReminder/Pods-PillReminder.release.xcconfig"; sourceTree = "<group>"; };
+		896FE0F02B16443E00292E17 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		896FE0F22B16444F00292E17 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		896FE0F62B16450000292E17 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		896FE0F72B16450000292E17 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		896FE0FB2B16462C00292E17 /* ApplicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
+		896FE0FD2B1646B400292E17 /* ApplicationFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowAssembly.swift; sourceTree = "<group>"; };
+		896FE1012B16472800292E17 /* NavigationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationNode.swift; sourceTree = "<group>"; };
+		896FE1042B16479400292E17 /* RemindersFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersFlow.swift; sourceTree = "<group>"; };
+		896FE1062B1647F900292E17 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		896FE1092B16483F00292E17 /* RemindersListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListModel.swift; sourceTree = "<group>"; };
+		896FE10B2B16484C00292E17 /* RemindersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListViewModel.swift; sourceTree = "<group>"; };
+		896FE10D2B16486000292E17 /* RemindersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListViewController.swift; sourceTree = "<group>"; };
+		896FE1102B1648A600292E17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		896FE1132B16491200292E17 /* HasCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCustomView.swift; sourceTree = "<group>"; };
+		896FE1172B16499900292E17 /* RemindersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListView.swift; sourceTree = "<group>"; };
+		896FE11C2B164BF800292E17 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		896FE1222B164EBB00292E17 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		896FE1242B17855F00292E17 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		896FE12E2B1A6D1500292E17 /* RemindersListPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListPlaceholderView.swift; sourceTree = "<group>"; };
+		896FE1372B1A6DB900292E17 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		896FE1392B1A6DC500292E17 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		896FE13B2B1A6DFC00292E17 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		896FE13E2B1A6FBE00292E17 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		896FE1412B1A73E400292E17 /* CancellablesApplicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellablesApplicable.swift; sourceTree = "<group>"; };
+		896FE1452B1A74D200292E17 /* RemindPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindPresentable.swift; sourceTree = "<group>"; };
+		896FE1482B1A766400292E17 /* UIButton+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Action.swift"; sourceTree = "<group>"; };
+		896FE14A2B1A76B700292E17 /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
+		896FE14D2B1A77B000292E17 /* RemindTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindTableViewCell.swift; sourceTree = "<group>"; };
+		896FE1502B1A781500292E17 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		896FE1522B1A784500292E17 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		896FE1552B1BA64C00292E17 /* RemindersListSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListSectionHeaderView.swift; sourceTree = "<group>"; };
+		896FE1572B1BAC8300292E17 /* String+Attributed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Attributed.swift"; sourceTree = "<group>"; };
+		896FE1592B1BB02C00292E17 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
+		896FE15B2B1BB29300292E17 /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		896FE15D2B1BB4CA00292E17 /* Date+Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Calendar.swift"; sourceTree = "<group>"; };
+		896FE1612B1CFE1900292E17 /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
+		896FE1632B1CFE3100292E17 /* CreateReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewModel.swift; sourceTree = "<group>"; };
+		896FE1652B1CFE4200292E17 /* CreateReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderModel.swift; sourceTree = "<group>"; };
+		896FE1692B1CFEB500292E17 /* PillInfoStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillInfoStepViewController.swift; sourceTree = "<group>"; };
+		896FE16B2B1CFEC600292E17 /* ReminderInfoStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoStepViewController.swift; sourceTree = "<group>"; };
+		896FE16E2B1CFF4500292E17 /* CreateReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderView.swift; sourceTree = "<group>"; };
+		896FE1702B1CFF8700292E17 /* ReminderInfoStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoStepView.swift; sourceTree = "<group>"; };
+		896FE1722B1CFFAB00292E17 /* PillInfoStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillInfoStepView.swift; sourceTree = "<group>"; };
+		896FE1742B1D088E00292E17 /* ReminderInfoStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoStepViewModel.swift; sourceTree = "<group>"; };
+		896FE1762B1D08C800292E17 /* ReminderInfoStepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfoStepModel.swift; sourceTree = "<group>"; };
+		896FE1782B1D08EA00292E17 /* PillInfoStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillInfoStepViewModel.swift; sourceTree = "<group>"; };
+		896FE17A2B1D08FA00292E17 /* PillInfoStepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillInfoStepModel.swift; sourceTree = "<group>"; };
+		899031662B46F0D5008D08F3 /* DaySelectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectableView.swift; sourceTree = "<group>"; };
+		899031682B4702A8008D08F3 /* WeekDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysView.swift; sourceTree = "<group>"; };
+		8990316A2B4704B4008D08F3 /* WeekDayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayButton.swift; sourceTree = "<group>"; };
+		8990316E2B4C2652008D08F3 /* ScheduleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCardView.swift; sourceTree = "<group>"; };
+		899031702B4C2A01008D08F3 /* ScheduleSelectableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleSelectableView.swift; sourceTree = "<group>"; };
+		899031742B4DABAB008D08F3 /* DailyPillsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPillsCardView.swift; sourceTree = "<group>"; };
+		899031762B4DB0DA008D08F3 /* DailyTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTimeView.swift; sourceTree = "<group>"; };
+		899031792B4DC3CF008D08F3 /* StringBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBuilder.swift; sourceTree = "<group>"; };
+		8990317E2B504501008D08F3 /* PeriodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCardView.swift; sourceTree = "<group>"; };
+		899031802B517F76008D08F3 /* SchedulePatternType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePatternType.swift; sourceTree = "<group>"; };
+		899031852B56D318008D08F3 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		899031872B56D330008D08F3 /* TimePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewModel.swift; sourceTree = "<group>"; };
+		899031892B56D346008D08F3 /* TimePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerModel.swift; sourceTree = "<group>"; };
+		8990318C2B56D398008D08F3 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		8990318E2B59B095008D08F3 /* DateFormatter+PillReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+PillReminder.swift"; sourceTree = "<group>"; };
+		899031B52B5A8623008D08F3 /* PillReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PillReminder.xcdatamodel; sourceTree = "<group>"; };
+		899031B82B5A8ED5008D08F3 /* DataBaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseClient.swift; sourceTree = "<group>"; };
+		899031CC2B5AB98B008D08F3 /* UserEntity+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreData.swift"; sourceTree = "<group>"; };
+		899031CF2B6020E0008D08F3 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		899031D22B6022FE008D08F3 /* Resolver+Autoresolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Autoresolve.swift"; sourceTree = "<group>"; };
+		899031D42B616003008D08F3 /* RemindEntity+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemindEntity+CoreData.swift"; sourceTree = "<group>"; };
+		899031D62B61603C008D08F3 /* PlannedRemindEntity+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlannedRemindEntity+CoreData.swift"; sourceTree = "<group>"; };
+		899031D82B61691D008D08F3 /* Remind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remind.swift; sourceTree = "<group>"; };
+		899031DA2B618825008D08F3 /* PlannedRemind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedRemind.swift; sourceTree = "<group>"; };
+		899031DC2B61890A008D08F3 /* PlannedRemindStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedRemindStatus.swift; sourceTree = "<group>"; };
+		899031DE2B61944D008D08F3 /* Calendar+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Dates.swift"; sourceTree = "<group>"; };
+		89F29AEA2B3C4EAA00F37ABF /* CommonInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInputField.swift; sourceTree = "<group>"; };
+		89F29AEC2B3C4FA500F37ABF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		89F29AEF2B3C554E00F37ABF /* PillNameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillNameCardView.swift; sourceTree = "<group>"; };
+		89F29AF12B3C799800F37ABF /* PillActionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillActionCardView.swift; sourceTree = "<group>"; };
+		89F29AF32B3DF8D500F37ABF /* PillDoseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillDoseCardView.swift; sourceTree = "<group>"; };
+		89F29AF52B3DFA5700F37ABF /* CountActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountActionView.swift; sourceTree = "<group>"; };
+		89F29AF92B3DFE1A00F37ABF /* ImagePickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerService.swift; sourceTree = "<group>"; };
+		89F29AFB2B3DFE5700F37ABF /* UIApplication+Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Window.swift"; sourceTree = "<group>"; };
+		89F29AFD2B3DFEA000F37ABF /* UIWindow+Visible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Visible.swift"; sourceTree = "<group>"; };
+		89F29AFF2B3DFEE500F37ABF /* UIImage+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		89F29B012B3F131100F37ABF /* AlertControllerPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerPresentable.swift; sourceTree = "<group>"; };
+		89F29B032B3F1E0400F37ABF /* BasePopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePopupView.swift; sourceTree = "<group>"; };
+		89F29B062B3F2B4E00F37ABF /* FormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsViewController.swift; sourceTree = "<group>"; };
+		89F29B082B3F2B6700F37ABF /* FormsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsViewModel.swift; sourceTree = "<group>"; };
+		89F29B0A2B3F2B7500F37ABF /* FormsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsModel.swift; sourceTree = "<group>"; };
+		89F29B0D2B3F2C0800F37ABF /* FormsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsView.swift; sourceTree = "<group>"; };
+		89F29B0F2B3F2E9300F37ABF /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		89F29B132B444C5100F37ABF /* DrugFormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugFormType.swift; sourceTree = "<group>"; };
+		89F29B152B44669B00F37ABF /* StepsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsProgressView.swift; sourceTree = "<group>"; };
+		89FA5E2F2AF40C0900EA48CA /* PillReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FA5E322AF40C0900EA48CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89FA5E3B2AF40C0A00EA48CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89FA5E3E2AF40C0A00EA48CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89FA5E402AF40C0A00EA48CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03BD2141E85289CB7705249 /* Pods_PillReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89FA5E2C2AF40C0900EA48CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED9DD4CBB7190251F8CDF5B /* Pods_PillReminder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BF94A3BBD7C60D884A0A110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C03BD2141E85289CB7705249 /* Pods_PillReminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		896FE0F32B1644AC00292E17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				899031B32B5A85F6008D08F3 /* CoreData */,
+				89FA5E3B2AF40C0A00EA48CA /* Assets.xcassets */,
+				896FE1242B17855F00292E17 /* Colors.xcassets */,
+				896FE11F2B164E0300292E17 /* Generated */,
+				896FE0F42B1644AC00292E17 /* Fonts */,
+				896FE0F52B1644AC00292E17 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		896FE0F42B1644AC00292E17 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				896FE0F72B16450000292E17 /* OpenSans-Regular.ttf */,
+				896FE0F62B16450000292E17 /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		896FE0F52B1644AC00292E17 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				896FE0F02B16443E00292E17 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		896FE0FA2B16460400292E17 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				896FE0FB2B16462C00292E17 /* ApplicationFlow.swift */,
+				896FE0FD2B1646B400292E17 /* ApplicationFlowAssembly.swift */,
+				896FE1032B16477C00292E17 /* RemindersFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		896FE0FF2B16470F00292E17 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				896FE14F2B1A77E600292E17 /* Reusable */,
+				896FE1402B1A73C600292E17 /* Protocols */,
+				896FE1122B1648F900292E17 /* Controls */,
+				896FE10F2B16489900292E17 /* Controllers */,
+				896FE1002B16470F00292E17 /* Navigation */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		896FE1002B16470F00292E17 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1012B16472800292E17 /* NavigationNode.swift */,
+				896FE1062B1647F900292E17 /* Flow.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		896FE1032B16477C00292E17 /* RemindersFlow */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1042B16479400292E17 /* RemindersFlow.swift */,
+				899031832B556045008D08F3 /* TiimePicker */,
+				896FE15F2B1CFDEA00292E17 /* CreateReminder */,
+				896FE1082B16482700292E17 /* RemindersList */,
+			);
+			path = RemindersFlow;
+			sourceTree = "<group>";
+		};
+		896FE1082B16482700292E17 /* RemindersList */ = {
+			isa = PBXGroup;
+			children = (
+				896FE14C2B1A774400292E17 /* Cells */,
+				896FE1442B1A74C400292E17 /* PresentableModels */,
+				896FE1092B16483F00292E17 /* RemindersListModel.swift */,
+				896FE10B2B16484C00292E17 /* RemindersListViewModel.swift */,
+				896FE10D2B16486000292E17 /* RemindersListViewController.swift */,
+			);
+			path = RemindersList;
+			sourceTree = "<group>";
+		};
+		896FE10F2B16489900292E17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1102B1648A600292E17 /* BaseViewController.swift */,
+				896FE11C2B164BF800292E17 /* NavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		896FE1122B1648F900292E17 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1132B16491200292E17 /* HasCustomView.swift */,
+				896FE14A2B1A76B700292E17 /* UIControl+Combine.swift */,
+				89F29B012B3F131100F37ABF /* AlertControllerPresentable.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		896FE1152B16496C00292E17 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1302B1A6D8400292E17 /* Common */,
+				896FE16D2B1CFF2500292E17 /* CreateReminder */,
+				896FE1162B16498200292E17 /* RemindersList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		896FE1162B16498200292E17 /* RemindersList */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1552B1BA64C00292E17 /* RemindersListSectionHeaderView.swift */,
+				896FE12E2B1A6D1500292E17 /* RemindersListPlaceholderView.swift */,
+				896FE1172B16499900292E17 /* RemindersListView.swift */,
+			);
+			path = RemindersList;
+			sourceTree = "<group>";
+		};
+		896FE11F2B164E0300292E17 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1222B164EBB00292E17 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		896FE1302B1A6D8400292E17 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				89F29AE92B3C4E9000F37ABF /* InputFields */,
+				896FE1312B1A6D8400292E17 /* Buttons */,
+				896FE1322B1A6D8400292E17 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		896FE1312B1A6D8400292E17 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				896FE13B2B1A6DFC00292E17 /* PrimaryButton.swift */,
+				8990316A2B4704B4008D08F3 /* WeekDayButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		896FE1322B1A6D8400292E17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1392B1A6DC500292E17 /* NavigationView.swift */,
+				896FE1372B1A6DB900292E17 /* BaseView.swift */,
+				89F29AF52B3DFA5700F37ABF /* CountActionView.swift */,
+				89F29B032B3F1E0400F37ABF /* BasePopupView.swift */,
+				89F29B152B44669B00F37ABF /* StepsProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		896FE13D2B1A6F9700292E17 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				896FE13E2B1A6FBE00292E17 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		896FE1402B1A73C600292E17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1412B1A73E400292E17 /* CancellablesApplicable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		896FE1432B1A749B00292E17 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				899031D12B6022D6008D08F3 /* Extensions */,
+				899031B72B5A8EB9008D08F3 /* DataBaseClient */,
+				89F29B122B444C4000F37ABF /* Models */,
+				89F29AF72B3DFDF000F37ABF /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		896FE1442B1A74C400292E17 /* PresentableModels */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1452B1A74D200292E17 /* RemindPresentable.swift */,
+			);
+			path = PresentableModels;
+			sourceTree = "<group>";
+		};
+		896FE1472B1A765400292E17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1482B1A766400292E17 /* UIButton+Action.swift */,
+				896FE1572B1BAC8300292E17 /* String+Attributed.swift */,
+				896FE1592B1BB02C00292E17 /* UIView+Corners.swift */,
+				896FE15B2B1BB29300292E17 /* Collection+Safe.swift */,
+				896FE15D2B1BB4CA00292E17 /* Date+Calendar.swift */,
+				89F29AFB2B3DFE5700F37ABF /* UIApplication+Window.swift */,
+				89F29AFD2B3DFEA000F37ABF /* UIWindow+Visible.swift */,
+				89F29AFF2B3DFEE500F37ABF /* UIImage+Orientation.swift */,
+				899031DE2B61944D008D08F3 /* Calendar+Dates.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		896FE14C2B1A774400292E17 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				896FE14D2B1A77B000292E17 /* RemindTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		896FE14F2B1A77E600292E17 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1502B1A781500292E17 /* Reusable.swift */,
+				896FE1522B1A784500292E17 /* UITableView+Reusable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		896FE15F2B1CFDEA00292E17 /* CreateReminder */ = {
+			isa = PBXGroup;
+			children = (
+				89F29B052B3F2B2C00F37ABF /* Forms */,
+				896FE1672B1CFE9B00292E17 /* PillInfoStep */,
+				896FE1682B1CFE9B00292E17 /* ReminderInfoStep */,
+				896FE1602B1CFE0000292E17 /* CreateReminder */,
+			);
+			path = CreateReminder;
+			sourceTree = "<group>";
+		};
+		896FE1602B1CFE0000292E17 /* CreateReminder */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1652B1CFE4200292E17 /* CreateReminderModel.swift */,
+				896FE1632B1CFE3100292E17 /* CreateReminderViewModel.swift */,
+				896FE1612B1CFE1900292E17 /* CreateReminderViewController.swift */,
+			);
+			path = CreateReminder;
+			sourceTree = "<group>";
+		};
+		896FE1672B1CFE9B00292E17 /* PillInfoStep */ = {
+			isa = PBXGroup;
+			children = (
+				896FE17A2B1D08FA00292E17 /* PillInfoStepModel.swift */,
+				896FE1782B1D08EA00292E17 /* PillInfoStepViewModel.swift */,
+				896FE1692B1CFEB500292E17 /* PillInfoStepViewController.swift */,
+			);
+			path = PillInfoStep;
+			sourceTree = "<group>";
+		};
+		896FE1682B1CFE9B00292E17 /* ReminderInfoStep */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1762B1D08C800292E17 /* ReminderInfoStepModel.swift */,
+				896FE1742B1D088E00292E17 /* ReminderInfoStepViewModel.swift */,
+				896FE16B2B1CFEC600292E17 /* ReminderInfoStepViewController.swift */,
+			);
+			path = ReminderInfoStep;
+			sourceTree = "<group>";
+		};
+		896FE16D2B1CFF2500292E17 /* CreateReminder */ = {
+			isa = PBXGroup;
+			children = (
+				8990318B2B56D381008D08F3 /* TimePicker */,
+				899031652B46F093008D08F3 /* ReminderInfo */,
+				89F29B0C2B3F2BF500F37ABF /* Forms */,
+				89F29AEE2B3C551E00F37ABF /* PillInfo */,
+				896FE16E2B1CFF4500292E17 /* CreateReminderView.swift */,
+			);
+			path = CreateReminder;
+			sourceTree = "<group>";
+		};
+		899031652B46F093008D08F3 /* ReminderInfo */ = {
+			isa = PBXGroup;
+			children = (
+				8990317D2B4EF171008D08F3 /* PeriodCard */,
+				899031732B4DAB8F008D08F3 /* DailyPillsCard */,
+				899031722B4D997C008D08F3 /* ScheduleCard */,
+				896FE1702B1CFF8700292E17 /* ReminderInfoStepView.swift */,
+			);
+			path = ReminderInfo;
+			sourceTree = "<group>";
+		};
+		899031722B4D997C008D08F3 /* ScheduleCard */ = {
+			isa = PBXGroup;
+			children = (
+				8990316E2B4C2652008D08F3 /* ScheduleCardView.swift */,
+				899031702B4C2A01008D08F3 /* ScheduleSelectableView.swift */,
+				899031662B46F0D5008D08F3 /* DaySelectableView.swift */,
+				899031682B4702A8008D08F3 /* WeekDaysView.swift */,
+			);
+			path = ScheduleCard;
+			sourceTree = "<group>";
+		};
+		899031732B4DAB8F008D08F3 /* DailyPillsCard */ = {
+			isa = PBXGroup;
+			children = (
+				899031742B4DABAB008D08F3 /* DailyPillsCardView.swift */,
+				899031762B4DB0DA008D08F3 /* DailyTimeView.swift */,
+			);
+			path = DailyPillsCard;
+			sourceTree = "<group>";
+		};
+		899031782B4DC3B7008D08F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				899031792B4DC3CF008D08F3 /* StringBuilder.swift */,
+				8990318E2B59B095008D08F3 /* DateFormatter+PillReminder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8990317D2B4EF171008D08F3 /* PeriodCard */ = {
+			isa = PBXGroup;
+			children = (
+				8990317E2B504501008D08F3 /* PeriodCardView.swift */,
+			);
+			name = PeriodCard;
+			path = PillReminder/UI/CreateReminder/PeriodCard;
+			sourceTree = SOURCE_ROOT;
+		};
+		899031822B518338008D08F3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				89F29B132B444C5100F37ABF /* DrugFormType.swift */,
+				899031802B517F76008D08F3 /* SchedulePatternType.swift */,
+				899031DC2B61890A008D08F3 /* PlannedRemindStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		899031832B556045008D08F3 /* TiimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				899031892B56D346008D08F3 /* TimePickerModel.swift */,
+				899031872B56D330008D08F3 /* TimePickerViewModel.swift */,
+				899031852B56D318008D08F3 /* TimePickerViewController.swift */,
+			);
+			path = TiimePicker;
+			sourceTree = "<group>";
+		};
+		8990318B2B56D381008D08F3 /* TimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8990318C2B56D398008D08F3 /* TimePickerView.swift */,
+			);
+			path = TimePicker;
+			sourceTree = "<group>";
+		};
+		899031B32B5A85F6008D08F3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				899031B42B5A8623008D08F3 /* PillReminder.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		899031B72B5A8EB9008D08F3 /* DataBaseClient */ = {
+			isa = PBXGroup;
+			children = (
+				899031B82B5A8ED5008D08F3 /* DataBaseClient.swift */,
+			);
+			name = DataBaseClient;
+			path = Services/DataBaseClient;
+			sourceTree = "<group>";
+		};
+		899031BF2B5AB74E008D08F3 /* CoreDataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				899031CC2B5AB98B008D08F3 /* UserEntity+CoreData.swift */,
+				899031D42B616003008D08F3 /* RemindEntity+CoreData.swift */,
+				899031D62B61603C008D08F3 /* PlannedRemindEntity+CoreData.swift */,
+			);
+			path = CoreDataEntities;
+			sourceTree = "<group>";
+		};
+		899031CE2B6020CF008D08F3 /* ReminderService */ = {
+			isa = PBXGroup;
+			children = (
+				899031CF2B6020E0008D08F3 /* ReminderService.swift */,
+			);
+			path = ReminderService;
+			sourceTree = "<group>";
+		};
+		899031D12B6022D6008D08F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				899031D22B6022FE008D08F3 /* Resolver+Autoresolve.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89F29AE92B3C4E9000F37ABF /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				89F29AEA2B3C4EAA00F37ABF /* CommonInputField.swift */,
+				89F29AEC2B3C4FA500F37ABF /* CustomTextField.swift */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		89F29AEE2B3C551E00F37ABF /* PillInfo */ = {
+			isa = PBXGroup;
+			children = (
+				896FE1722B1CFFAB00292E17 /* PillInfoStepView.swift */,
+				89F29AEF2B3C554E00F37ABF /* PillNameCardView.swift */,
+				89F29AF12B3C799800F37ABF /* PillActionCardView.swift */,
+				89F29AF32B3DF8D500F37ABF /* PillDoseCardView.swift */,
+			);
+			path = PillInfo;
+			sourceTree = "<group>";
+		};
+		89F29AF72B3DFDF000F37ABF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				899031CE2B6020CF008D08F3 /* ReminderService */,
+				89F29AF82B3DFE0F00F37ABF /* ImagePickerService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		89F29AF82B3DFE0F00F37ABF /* ImagePickerService */ = {
+			isa = PBXGroup;
+			children = (
+				89F29AF92B3DFE1A00F37ABF /* ImagePickerService.swift */,
+			);
+			path = ImagePickerService;
+			sourceTree = "<group>";
+		};
+		89F29B052B3F2B2C00F37ABF /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				89F29B112B3F2EAD00F37ABF /* Cells */,
+				89F29B0A2B3F2B7500F37ABF /* FormsModel.swift */,
+				89F29B082B3F2B6700F37ABF /* FormsViewModel.swift */,
+				89F29B062B3F2B4E00F37ABF /* FormsViewController.swift */,
+			);
+			name = Forms;
+			path = PillReminder/Flows/RemindersFlow/Forms;
+			sourceTree = SOURCE_ROOT;
+		};
+		89F29B0C2B3F2BF500F37ABF /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				89F29B0D2B3F2C0800F37ABF /* FormsView.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		89F29B112B3F2EAD00F37ABF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				89F29B0F2B3F2E9300F37ABF /* FormTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		89F29B122B444C4000F37ABF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				899031D82B61691D008D08F3 /* Remind.swift */,
+				899031DA2B618825008D08F3 /* PlannedRemind.swift */,
+				899031BF2B5AB74E008D08F3 /* CoreDataEntities */,
+				899031822B518338008D08F3 /* Enums */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89FA5E262AF40C0900EA48CA = {
+			isa = PBXGroup;
+			children = (
+				89FA5E312AF40C0900EA48CA /* PillReminder */,
+				89FA5E302AF40C0900EA48CA /* Products */,
+				B6108D25904B75EF9B843560 /* Pods */,
+				3BF94A3BBD7C60D884A0A110 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89FA5E302AF40C0900EA48CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89FA5E2F2AF40C0900EA48CA /* PillReminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89FA5E312AF40C0900EA48CA /* PillReminder */ = {
+			isa = PBXGroup;
+			children = (
+				89FA5E322AF40C0900EA48CA /* AppDelegate.swift */,
+				899031782B4DC3B7008D08F3 /* Utils */,
+				896FE1472B1A765400292E17 /* Extensions */,
+				896FE13D2B1A6F9700292E17 /* Constants */,
+				896FE0FF2B16470F00292E17 /* Common */,
+				896FE0FA2B16460400292E17 /* Flows */,
+				896FE1152B16496C00292E17 /* UI */,
+				896FE1432B1A749B00292E17 /* Core */,
+				896FE0F32B1644AC00292E17 /* Resources */,
+				89FA5E3D2AF40C0A00EA48CA /* LaunchScreen.storyboard */,
+				89FA5E402AF40C0A00EA48CA /* Info.plist */,
+			);
+			path = PillReminder;
+			sourceTree = "<group>";
+		};
+		B6108D25904B75EF9B843560 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				346E720C155C5499AB49E414 /* Pods-PillReminder.debug.xcconfig */,
+				3EE5DEDCF4231B2BB150D730 /* Pods-PillReminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89FA5E2E2AF40C0900EA48CA /* PillReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89FA5E432AF40C0A00EA48CA /* Build configuration list for PBXNativeTarget "PillReminder" */;
+			buildPhases = (
+				4D533FD75C436737C08ED3F9 /* [CP] Check Pods Manifest.lock */,
+				896FE11E2B164D9200292E17 /* R.swift */,
+				89FA5E2B2AF40C0900EA48CA /* Sources */,
+				89FA5E2C2AF40C0900EA48CA /* Frameworks */,
+				89FA5E2D2AF40C0900EA48CA /* Resources */,
+				34B52389F2325AB281A5A25D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PillReminder;
+			productName = PillReminder;
+			productReference = 89FA5E2F2AF40C0900EA48CA /* PillReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89FA5E272AF40C0900EA48CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					89FA5E2E2AF40C0900EA48CA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 89FA5E2A2AF40C0900EA48CA /* Build configuration list for PBXProject "PillReminder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = uk;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				uk,
+			);
+			mainGroup = 89FA5E262AF40C0900EA48CA;
+			productRefGroup = 89FA5E302AF40C0900EA48CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89FA5E2E2AF40C0900EA48CA /* PillReminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89FA5E2D2AF40C0900EA48CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896FE0F92B16450000292E17 /* OpenSans-Regular.ttf in Resources */,
+				896FE0F82B16450000292E17 /* OpenSans-SemiBold.ttf in Resources */,
+				89FA5E3F2AF40C0A00EA48CA /* LaunchScreen.storyboard in Resources */,
+				896FE1252B17855F00292E17 /* Colors.xcassets in Resources */,
+				896FE0F12B16443E00292E17 /* Localizable.strings in Resources */,
+				89FA5E3C2AF40C0A00EA48CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B52389F2325AB281A5A25D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PillReminder/Pods-PillReminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PillReminder/Pods-PillReminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PillReminder/Pods-PillReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D533FD75C436737C08ED3F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PillReminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		896FE11E2B164D9200292E17 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/PillReminder/Resources/Generated/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89FA5E2B2AF40C0900EA48CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899031B62B5A8623008D08F3 /* PillReminder.xcdatamodeld in Sources */,
+				89F29AFE2B3DFEA000F37ABF /* UIWindow+Visible.swift in Sources */,
+				899031862B56D318008D08F3 /* TimePickerViewController.swift in Sources */,
+				89F29B142B444C5100F37ABF /* DrugFormType.swift in Sources */,
+				8990318D2B56D398008D08F3 /* TimePickerView.swift in Sources */,
+				89F29AF02B3C554E00F37ABF /* PillNameCardView.swift in Sources */,
+				896FE13C2B1A6DFC00292E17 /* PrimaryButton.swift in Sources */,
+				8990316B2B4704B4008D08F3 /* WeekDayButton.swift in Sources */,
+				896FE13F2B1A6FBE00292E17 /* Constants.swift in Sources */,
+				8990318A2B56D346008D08F3 /* TimePickerModel.swift in Sources */,
+				896FE1642B1CFE3100292E17 /* CreateReminderViewModel.swift in Sources */,
+				8990316F2B4C2652008D08F3 /* ScheduleCardView.swift in Sources */,
+				899031672B46F0D5008D08F3 /* DaySelectableView.swift in Sources */,
+				896FE1532B1A784500292E17 /* UITableView+Reusable.swift in Sources */,
+				896FE16C2B1CFEC600292E17 /* ReminderInfoStepViewController.swift in Sources */,
+				896FE1142B16491200292E17 /* HasCustomView.swift in Sources */,
+				89F29B002B3DFEE500F37ABF /* UIImage+Orientation.swift in Sources */,
+				89F29B092B3F2B6700F37ABF /* FormsViewModel.swift in Sources */,
+				899031B92B5A8ED5008D08F3 /* DataBaseClient.swift in Sources */,
+				899031882B56D330008D08F3 /* TimePickerViewModel.swift in Sources */,
+				899031772B4DB0DA008D08F3 /* DailyTimeView.swift in Sources */,
+				8990317F2B504501008D08F3 /* PeriodCardView.swift in Sources */,
+				896FE1462B1A74D200292E17 /* RemindPresentable.swift in Sources */,
+				896FE1512B1A781500292E17 /* Reusable.swift in Sources */,
+				896FE15E2B1BB4CA00292E17 /* Date+Calendar.swift in Sources */,
+				899031712B4C2A01008D08F3 /* ScheduleSelectableView.swift in Sources */,
+				89F29B102B3F2E9300F37ABF /* FormTableViewCell.swift in Sources */,
+				8990317A2B4DC3CF008D08F3 /* StringBuilder.swift in Sources */,
+				896FE1232B164EBB00292E17 /* R.generated.swift in Sources */,
+				899031DB2B618825008D08F3 /* PlannedRemind.swift in Sources */,
+				899031D32B6022FE008D08F3 /* Resolver+Autoresolve.swift in Sources */,
+				896FE1732B1CFFAB00292E17 /* PillInfoStepView.swift in Sources */,
+				896FE17B2B1D08FA00292E17 /* PillInfoStepModel.swift in Sources */,
+				896FE1492B1A766400292E17 /* UIButton+Action.swift in Sources */,
+				899031D72B61603C008D08F3 /* PlannedRemindEntity+CoreData.swift in Sources */,
+				89F29AF62B3DFA5700F37ABF /* CountActionView.swift in Sources */,
+				896FE1752B1D088E00292E17 /* ReminderInfoStepViewModel.swift in Sources */,
+				896FE14E2B1A77B000292E17 /* RemindTableViewCell.swift in Sources */,
+				896FE1662B1CFE4200292E17 /* CreateReminderModel.swift in Sources */,
+				896FE10C2B16484C00292E17 /* RemindersListViewModel.swift in Sources */,
+				89F29AF42B3DF8D500F37ABF /* PillDoseCardView.swift in Sources */,
+				896FE1422B1A73E400292E17 /* CancellablesApplicable.swift in Sources */,
+				89F29AEB2B3C4EAA00F37ABF /* CommonInputField.swift in Sources */,
+				899031752B4DABAB008D08F3 /* DailyPillsCardView.swift in Sources */,
+				896FE1182B16499900292E17 /* RemindersListView.swift in Sources */,
+				896FE1582B1BAC8300292E17 /* String+Attributed.swift in Sources */,
+				896FE13A2B1A6DC500292E17 /* NavigationView.swift in Sources */,
+				89F29B042B3F1E0400F37ABF /* BasePopupView.swift in Sources */,
+				8990318F2B59B095008D08F3 /* DateFormatter+PillReminder.swift in Sources */,
+				899031CD2B5AB98B008D08F3 /* UserEntity+CoreData.swift in Sources */,
+				89F29B0E2B3F2C0800F37ABF /* FormsView.swift in Sources */,
+				899031D52B616003008D08F3 /* RemindEntity+CoreData.swift in Sources */,
+				89F29AFA2B3DFE1A00F37ABF /* ImagePickerService.swift in Sources */,
+				899031DF2B61944D008D08F3 /* Calendar+Dates.swift in Sources */,
+				896FE1052B16479400292E17 /* RemindersFlow.swift in Sources */,
+				89F29AFC2B3DFE5700F37ABF /* UIApplication+Window.swift in Sources */,
+				896FE1562B1BA64C00292E17 /* RemindersListSectionHeaderView.swift in Sources */,
+				899031692B4702A8008D08F3 /* WeekDaysView.swift in Sources */,
+				896FE1712B1CFF8700292E17 /* ReminderInfoStepView.swift in Sources */,
+				896FE12F2B1A6D1500292E17 /* RemindersListPlaceholderView.swift in Sources */,
+				896FE16F2B1CFF4500292E17 /* CreateReminderView.swift in Sources */,
+				896FE11D2B164BF800292E17 /* NavigationController.swift in Sources */,
+				896FE0FE2B1646B400292E17 /* ApplicationFlowAssembly.swift in Sources */,
+				896FE1022B16472800292E17 /* NavigationNode.swift in Sources */,
+				89F29AF22B3C799800F37ABF /* PillActionCardView.swift in Sources */,
+				896FE10E2B16486000292E17 /* RemindersListViewController.swift in Sources */,
+				896FE1772B1D08C800292E17 /* ReminderInfoStepModel.swift in Sources */,
+				896FE1112B1648A600292E17 /* BaseViewController.swift in Sources */,
+				89F29B072B3F2B4E00F37ABF /* FormsViewController.swift in Sources */,
+				896FE1792B1D08EA00292E17 /* PillInfoStepViewModel.swift in Sources */,
+				896FE16A2B1CFEB500292E17 /* PillInfoStepViewController.swift in Sources */,
+				896FE1072B1647F900292E17 /* Flow.swift in Sources */,
+				89F29B0B2B3F2B7500F37ABF /* FormsModel.swift in Sources */,
+				896FE0FC2B16462C00292E17 /* ApplicationFlow.swift in Sources */,
+				896FE15C2B1BB29300292E17 /* Collection+Safe.swift in Sources */,
+				899031D92B61691D008D08F3 /* Remind.swift in Sources */,
+				89F29B022B3F131100F37ABF /* AlertControllerPresentable.swift in Sources */,
+				89FA5E332AF40C0900EA48CA /* AppDelegate.swift in Sources */,
+				899031DD2B61890A008D08F3 /* PlannedRemindStatus.swift in Sources */,
+				896FE15A2B1BB02C00292E17 /* UIView+Corners.swift in Sources */,
+				896FE10A2B16483F00292E17 /* RemindersListModel.swift in Sources */,
+				89F29B162B44669B00F37ABF /* StepsProgressView.swift in Sources */,
+				896FE14B2B1A76B700292E17 /* UIControl+Combine.swift in Sources */,
+				899031812B517F76008D08F3 /* SchedulePatternType.swift in Sources */,
+				896FE1622B1CFE1900292E17 /* CreateReminderViewController.swift in Sources */,
+				896FE1382B1A6DB900292E17 /* BaseView.swift in Sources */,
+				89F29AED2B3C4FA500F37ABF /* CustomTextField.swift in Sources */,
+				899031D02B6020E0008D08F3 /* ReminderService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89FA5E3D2AF40C0A00EA48CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89FA5E3E2AF40C0A00EA48CA /* Base */,
+				896FE0F22B16444F00292E17 /* uk */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89FA5E412AF40C0A00EA48CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89FA5E422AF40C0A00EA48CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89FA5E442AF40C0A00EA48CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346E720C155C5499AB49E414 /* Pods-PillReminder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SLLGDBJR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PillReminder/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Фото";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Agilie.PillReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89FA5E452AF40C0A00EA48CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE5DEDCF4231B2BB150D730 /* Pods-PillReminder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SLLGDBJR5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PillReminder/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Фото";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Agilie.PillReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89FA5E2A2AF40C0900EA48CA /* Build configuration list for PBXProject "PillReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89FA5E412AF40C0A00EA48CA /* Debug */,
+				89FA5E422AF40C0A00EA48CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89FA5E432AF40C0A00EA48CA /* Build configuration list for PBXNativeTarget "PillReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89FA5E442AF40C0A00EA48CA /* Debug */,
+				89FA5E452AF40C0A00EA48CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		899031B42B5A8623008D08F3 /* PillReminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				899031B52B5A8623008D08F3 /* PillReminder.xcdatamodel */,
+			);
+			currentVersion = 899031B52B5A8623008D08F3 /* PillReminder.xcdatamodel */;
+			path = PillReminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 89FA5E272AF40C0900EA48CA /* Project object */;
+}

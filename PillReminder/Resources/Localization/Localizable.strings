@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  PillReminder
+
+  Created by Александр Ветряков on 28.11.2023.
+  
+*/
+
+// Mark: - Common
+"common.today.title" = "Сьогодні";
+"common.next.title" = "Продовжити";
+"common.cancel.title" = "Відмінити";
+"common.settings.title" = "Налаштування";
+"common.create.title" = "Створити";
+"common.accept.title" = "Підтвердити";
+
+// Mark: - StringBuilder
+
+"stringBuilder.count" = "раз";
+
+// Mark: - DrugForm
+
+"drugForm.capsule.title" = "Капсула";
+"drugForm.tablet.title" = "Таблетка";
+"drugForm.injection.title" = "Ін'єкція";
+"drugForm.drops.title" = "Краплі";
+"drugForm.sachet.title" = "Саше";
+"drugForm.spray.title" = "Спрей";
+"drugForm.solution.title" = "Розчин";
+"drugForm.suppository.title" = "Свічка";
+"drugForm.gel.title" = "Мазь/гель";
+"drugForm.inhaler.title" = "Інгалятор";
+
+// Mark: - ReminderList
+
+"reminderList.placeholder.title" = "Список  медикаментів порожній";
+"reminderList.placeholder.subtitle" = "Щоб додати новий медикамент, натисніть кнопку \"Додати нагадування\".";
+"reminderList.proceedButton.title" = "Додати нагадування";
+
+// Mark: - CreateReminder
+
+"createReminder.navigation.title" = "Створення нагадування";
+
+// Mark: - PillInfo
+
+"pillInfo.name.title" = "Який медикамент ви хочете додати?";
+"pillInfo.form.title" = "Форма";
+"pillInfo.singleDose.title" = "Разова доза";
+"pillInfo.makePhoto.title" = "Зробити фото";
+"pillInfo.makePhotoButton.title" = "Зробити фото";
+"pillInfo.loadPhotoButton.title" = "Завантажити фото";
+"pillInfo.changePhoto.title" = "Доступ до Фото";
+"pillInfo.changePhoto.subtitle" = "Для відправки фотографій потрібний доступ до Вашої бібліотеки фото";
+
+// Mark: - ReminderInfo
+
+"reminderInfo.schedule.title" = "Оберіть розклад прийому";
+"reminderInfo.days.title" = "Дні тижня";
+"reminderInfo.cycles.title" = "Цикли";
+"reminderInfo.countQuestion.title" = "Скiльки разiв на день?";
+"reminderInfo.byDay.title" = "на день";
+"reminderInfo.dailyPills.title" = "Як часто приймаєш?";
+"reminderInfo.extensionParameters.title" = "Розширені параметри";
+"reminderInfo.receptionPeriod.title" = "Період прийому";
+"reminderInfo.startPeriod.title" = "Початок";
+"reminderInfo.daysPeriod.title" = "Днів";
+"reminderInfo.endPeriod.title" = "Кінець";
+
+// Mark: - TimePicker
+"timePicker.title" = "Оберіть час";
